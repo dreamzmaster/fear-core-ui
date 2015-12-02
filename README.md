@@ -1,41 +1,26 @@
-# Pattern Library
+# FEAR CORE UI
 
-An application that acts as a single point of reference for all core patterns used across the fear pages of marksandspencer.com.
-
-### Setup prerequisites
-- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [Node.js and npm](https://docs.npmjs.com/getting-started/installing-node)
-
-### Installation
-- Fork the repo
-- Clone your new pattern library repo `git clone https://github.com/[YOUR-USERNAME]/pattern-library.git`
-- Run `npm install`
-
-#### Gulp tasks
-
-- `gulp serve` - serves the application
-- `gulp build` - compiles and minifies the application into the build folder
+Core Sass, fonts and images for Marks and Spencer
 
 
-
-### Consuming the Pattern Library
-1. Run `npm install https://github.com/DigitalInnovation/pattern-library --save-dev`
+### Consuming the Library
+1. Run `npm install https://github.com/DigitalInnovation/fear-core-ui --save-dev`
 2. Add the following to the gulp sass compile file.
 ```
-var patternLibrary = require('pattern-library');
+var fearCoreUI = require('fear-core-ui');
 ...
 ...
 .pipe(sass({
-    includePaths: patternLibrary.includePaths
+    includePaths: fearCoreUI.sassPaths
 }))
 ```
 
-You can now reference any sass file under the 'pattern-library/app/sass' folder.
+You can now reference any sass file.
 
 #### example:
 ```
-@import 'base';
-@import 'core/mixins';
+@import 'fear-core-ui/base';
+@import 'fear-core-ui/typography';
 ```
 
 # SASS / CSS coding standards
@@ -55,10 +40,10 @@ The following can be exposed through aggregate files:
     // utlities.scss
     @import 'utilities/functions';
     @import 'utilities/mixins';
-    @import 'utilities/placeholders';
+    @import 'utilities/extends';
 ```
   
-This can be done because the sass code in these files do not add CSS unless mixins / placeholders are explicitly called from the consuming code.
+This can be done because the sass code in these files do not add CSS unless mixins / extends are explicitly called from the consuming code.
 
 ## Explicit imports
 
@@ -70,7 +55,7 @@ which included all the components CSS. That would create bloat and unused CSS be
 **Example**
 The buttons components contains direct CSS and must be imported through a direct import and not an aggregate sass file.
 
-`@import components/buttons;`
+`@import ui-pattern/buttons;`
 
 ```css
     // buttons.scss
@@ -143,42 +128,3 @@ sass
     |- _header.scss
     |- _footer.scss
 ```
-
-## CssComb
-
-[http://csscomb.com](http://csscomb.com)
- 
-`.csscomb.json`
-```
-{
-    "remove-empty-rulesets": true,
-    "always-semicolon": true,
-    "color-case": "lower",
-    "block-indent": "  ",
-    "color-shorthand": true,
-    "element-case": "lower",
-    "eof-newline": true,
-    "leading-zero": false,
-    "quotes": "single",
-    "sort-order-fallback": "abc",
-    "space-before-colon": "",
-    "space-after-colon": " ",
-    "space-before-combinator": " ",
-    "space-after-combinator": " ",
-    "space-between-declarations": "\n",
-    "space-before-opening-brace": " ",
-    "space-after-opening-brace": "\n",
-    "space-after-selector-delimiter": "\n",
-    "space-before-selector-delimiter": "",
-    "space-before-closing-brace": "\n",
-    "strip-spaces": true,
-    "tab-size": true,
-    "unitless-zero": true,
-    "vendor-prefix-align": true
-}
-```
-
-## Map files
-
-Generate sass map files?
-
