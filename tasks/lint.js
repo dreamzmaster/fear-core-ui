@@ -7,7 +7,7 @@ module.exports = function () {
         cache = require('gulp-cached');
 
     gulp.task('lint-sass', function() {
-        gulp.src(['./app/sass/**/*.scss'])
+        gulp.src(['./app/sass/**/*.scss', './test/sass/**/*.scss'])
             .pipe(cache('scsslint'))
             .pipe(scsslint())
             .pipe(scsslint.failReporter());

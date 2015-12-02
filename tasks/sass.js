@@ -1,6 +1,6 @@
 'use strict';
 
-§§module.exports = function() {
+module.exports = function() {
 
     var gulp = require('gulp'),
         sass = require('gulp-sass'),
@@ -14,7 +14,7 @@
     };
 
     gulp.task('sass', function() {
-        gulp.src(['./app/sass/**/*.scss'])
+        gulp.src(['./app/sass/**/*.scss', './test/sass/**/*.scss'])
             .pipe(sass(sassOptions)
                 .on('error', sass.logError))
             .pipe(gulp.dest('./build/css'))
