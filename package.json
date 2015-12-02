@@ -1,0 +1,38 @@
+{
+  "name": "fear-core-ui",
+  "version": "1.0.0",
+  "description": "Marks and Spencer core UI sass, fonts, images and assets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DigitalInnovation/fear-core-ui.git"
+  },
+  "keywords": [
+    "sass",
+    "fonts",
+    "ui",
+    "images"
+  ],
+  "author": {
+    "name": "Marks and Spencer",
+    "email": "",
+    "url": "http://www.marksandspencer.com/"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DigitalInnovation/fear-core-ui/issues"
+  },
+  "homepage": "https://github.com/DigitalInnovation/fear-core-ui",
+  "dependencies": {
+    "node-bourbon": "^4.2.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-cached": "^1.1.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-scss-lint": "^0.3.8"
+  }
+}
