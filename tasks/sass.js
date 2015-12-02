@@ -1,16 +1,23 @@
 'use strict';
 
-module.exports = function () {
+§§module.exports = function() {
 
     var gulp = require('gulp'),
         sass = require('gulp-sass'),
         bourbon = require('node-bourbon');
 
-    gulp.task('sass', function () {
+    var sassOptions = {
+        includePaths: bourbon.includePaths,
+        outputStyle: 'expanded',
+        sourceComments: true,
+        errLogToConsole: true
+    };
+
+    gulp.task('sass', function() {
         gulp.src(['./app/sass/**/*.scss'])
-            .pipe(sass({
-                includePaths: bourbon.includePaths
-            }).on('error', sass.logError))
+            .pipe(sass(sassOptions)
+                .on('error', sass.logError))
             .pipe(gulp.dest('./build/css'))
     });
+
 };
