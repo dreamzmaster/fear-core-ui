@@ -25,13 +25,7 @@
 /// @output @media only screen and (min-width: 30em)
 /// @group Media queries
 @mixin media-query-xsmall {
-  @if $browser == 'non-ie8' {
-    @media only screen and (min-width: calculateEm($screen-xs/1px)) {
-      @content;
-    }
-  }
-  // Force small screen styling to IE8
-  @if $browser == 'ie8' {
+  @media only screen and (min-width: calculateEm($screen-xs/1px)) {
     @content;
   }
 }
@@ -42,59 +36,33 @@
 /// @group Media queries
 
 @mixin media-query-xsmall-small {
-  @if $browser == 'non-ie8' {
-    @media (min-width: calculateEm($screen-xs/1px)) and (max-width: calculateEm($screen-xs-max/1px)) {
-      @content;
-    }
-
-  }
-  // Force small screen styling to IE8
-  @if $browser == 'ie8' {
+  @media (min-width: calculateEm($screen-xs/1px)) and (max-width: calculateEm($screen-xs-max/1px)) {
     @content;
   }
 }
 
 @mixin media-query-small-landscape {
-  @if $browser == 'non-ie8' {
-    @media only screen and (min-width: calculateEm($screen-sm/1px)) and (orientation: landscape) {
-      @content;
-    }
-  }
-
-  @if $browser == 'ie8' {
+  @media only screen and (min-width: calculateEm($screen-sm/1px)) and (orientation: landscape) {
     @content;
   }
 }
 
-
-/// Small devices (tablets, 768px and up, also applied to IE8)
+/// Small devices (tablets, 768px and up)
 /// @example @include media-query-small
 /// @output @media only screen and (min-width: 48em)
 /// @group Media queries
 @mixin media-query-small {
-  @if $browser == 'non-ie8' {
-    @media only screen and (min-width: calculateEm($screen-sm/1px)) {
-      @content;
-    }
-  }
-  // Force small screen styling to IE8
-  @if $browser == 'ie8' {
+  @media only screen and (min-width: calculateEm($screen-sm/1px)) {
     @content;
   }
 }
 
-/// Medium devices (desktops, 992px and up, also applied to IE8)
+/// Medium devices (desktops, 992px and up)
 /// @example @include media-query-medium
 /// @output @media only screen and (min-width: 62em)
 /// @group Media queries
 @mixin media-query-medium {
-  @if $browser == 'non-ie8' {
-    @media only screen and (min-width: calculateEm($screen-md/1px)) {
-      @content;
-    }
-  }
-  // Force medium screen styling to IE8
-  @if $browser == 'ie8' {
+  @media only screen and (min-width: calculateEm($screen-md/1px)) {
     @content;
   }
 }

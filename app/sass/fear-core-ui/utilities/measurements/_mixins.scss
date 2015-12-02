@@ -1,4 +1,4 @@
-/// Sets rem values, with px fallback for ie8.
+/// Sets rem values
 /// @link http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
 /// @author Hugo Giraudel
 /// @param {string} $property - Font-size, margin, etc
@@ -17,25 +17,23 @@
 
     @if $value != auto {
       $int: parseInt($value);
-    }
-    @else {
+    } @else {
       $int: $value;
     }
 
     @if $int == 0 or $value == auto {
-      $px: append($px , $value);
+      $px: append($px, $value);
       $rem: append($rem, $value);
-    }
-    @else {
+    } @else {
       $unit: unit($value);
       $val: parseInt($value);
 
       @if $unit == 'px' {
-        $px: append($px,  $value);
+        $px: append($px, $value);
         $rem: append($rem, ($val / 10 + rem));
       }
       @if $unit == 'rem' {
-        $px: append($px,  ($val * 10 + px));
+        $px: append($px, ($val * 10 + px));
         $rem: append($rem, $value);
       }
     }
@@ -44,11 +42,6 @@
   @if $px == $rem {
     #{$property}: $px;
   } @else {
-    @if $browser == 'ie8' {
-      #{$property}: $px;
-    }
-    @if $browser == 'non-ie8' {
-      #{$property}: $rem;
-    }
+    #{$property}: $rem;
   }
 }

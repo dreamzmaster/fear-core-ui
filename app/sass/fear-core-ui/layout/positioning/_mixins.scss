@@ -2,10 +2,6 @@
 @mixin wrapper($maxWidth) {
   margin: 0 auto;
   @include rem(max-width, $maxWidth);
-  // Force fixed width for IE8
-  @if $browser == 'ie8' {
-    @include rem(width, $screen-md);
-  }
 }
 
 /// Center an icon (sprite) horizontally

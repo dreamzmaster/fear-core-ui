@@ -123,14 +123,6 @@ To add icons to the mns-icons font, follow the steps below:
    - copy-paste the '.icon-.....' css rules from style.css into FEAR folder /sass/components/_icons.scss
 */
 
-// Pseudo Font Icons fix for IE8
-@if $browser == 'ie8' {
-  .loading-icons {
-    :before,
-    :after { content: ' ' !important; }
-  }
-}
-
 
 
 /* -------- Icon elements -------- */

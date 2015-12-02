@@ -39,14 +39,6 @@
     display: none !important;
   }
 
-  //  IE8 Support — Because we don't have media query support in IE8,
-  //  we want to always show the largest visible element
-  .ie8 {
-    .visible-lg-block {
-      display: block !important;
-    }
-  }
-
   @media (max-width: $screen-xs-max) {
     @include responsive-visibility('.visible-xs');
   }
