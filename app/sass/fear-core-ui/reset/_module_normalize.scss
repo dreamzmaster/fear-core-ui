@@ -1,6 +1,9 @@
 @import '../layout/grid/mixins_breakpoints';
 @import '../utilities/measurements';
 
+// scss-lint:disable VendorPrefix
+// scss-lint:disable PseudoElement
+
 /* --------
   Normalize
   -------- */
@@ -11,8 +14,14 @@
 // * 2. Prevent iOS text size adjust after orientation change, without disabling
 // *    user zoom.
 
+$reset-font-sans-serif: sans-serif;
+$reset-mark-background: #ff0;
+$reset-color-mark: #000;
+$reset-font-monospace: monospace, monospace;
+$reset-color-fieldset-border: #c0c0c0;
+
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: $reset-font-sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -84,6 +93,7 @@ a:hover {
 // Text-level semantics// ========================================================================== */
 
 // Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+// scss-lint:disable QualifyingElement
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -104,8 +114,8 @@ dfn {
 
 // Address styling not present in IE 8/9.
 mark {
-  background: #ff0;
-  color: #000;
+  background: $reset-mark-background;
+  color: $reset-color-mark;
 }
 
 // Address inconsistent and variable font size in all browsers.
@@ -123,11 +133,11 @@ sup {
 }
 
 sup {
-  top: -0.5em;
+  top: -.5em;
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -.25em;
 }
 
 // Embedded content
@@ -168,7 +178,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: $reset-font-monospace;
   font-size: 1em;
 }
 
@@ -297,9 +307,9 @@ select {
 
 // Define consistent border, margin, and padding.
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid $reset-color-fieldset-border;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  padding: .35em .625em .75em;
 }
 
 // 1. Correct `color` not being inherited in IE 8/9/10/11.

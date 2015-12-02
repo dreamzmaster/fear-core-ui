@@ -23,6 +23,7 @@ h2,
 h3,
 .gamma-text {
   @extend %gamma-text;
+  font-family: $font__helvetica--medium;
 }
 
 .base-text {
@@ -55,11 +56,6 @@ h1,
 h2,
 .beta-text {
   font-family: $font__helvetica--light;
-}
-
-h3,
-.gamma-text {
-  font-family: $font__helvetica--medium;
 }
 
 .small-text {

@@ -1,3 +1,5 @@
+@import '../../typography/variables';
+
 /* --------
   M&S font icons
   -------- */
@@ -123,12 +125,12 @@ To add icons to the mns-icons font, follow the steps below:
    - copy-paste the '.icon-.....' css rules from style.css into FEAR folder /sass/components/_icons.scss
 */
 
-
-
 /* -------- Icon elements -------- */
 
 // Overwrite italic font style
-.icon__label { font-style: normal; }
+.icon__label {
+  font-style: normal;
+}
 
 /* -------- Icon modifiers -------- */
 
@@ -150,15 +152,7 @@ To add icons to the mns-icons font, follow the steps below:
 }
 
 .icon,
-[class^='icon-']:before,
-[class*=' icon-']:before {
-  font-family: $font__icons;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  speak: none;
-  text-transform: none;
+[class^='icon-']::before,
+[class*=' icon-']::before {
+  @extend %mns-icons;
 }

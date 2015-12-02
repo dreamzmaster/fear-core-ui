@@ -13,8 +13,8 @@ html {
 
 // Box sizing - natural box layout model to all elements, but allowing components to change
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -62,7 +62,7 @@ a:focus {
   display: none !important;
 }
 
-@if $channel == 'channel-tsop' {
+@if variable-exists(channel) and $channel == 'channel-tsop' {
   body {
     user-select: none;
     -ms-content-zooming: none;

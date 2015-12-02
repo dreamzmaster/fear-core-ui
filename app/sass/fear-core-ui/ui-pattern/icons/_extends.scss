@@ -1,21 +1,20 @@
-%mns-icons:before,
-[class^='icon-']:before,
-[class*=' icon-']:before {
-  font-family: 'mns-icons';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import 'bourbon';
+@import '../../typography/variables';
 
 // Rotate icon 180 on hover
 %icon--rotate {
   @include transform(translateY(-2px) rotate(180deg));
   display: inline-block;
+}
+
+%mns-icons {
+  font-family: $font__icons;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
 }

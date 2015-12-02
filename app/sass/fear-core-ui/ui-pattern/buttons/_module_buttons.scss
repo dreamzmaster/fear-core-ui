@@ -1,3 +1,6 @@
+@import '../../layout/grid/mixins_breakpoints';
+@import '../../utilities/measurements';
+
 /* --------
   Buttons
   -------- */
@@ -132,7 +135,7 @@
   max-width: 100%;
 }
 
-@if $channel == 'channel-tsop' {
+@if variable-exists(channel) and $channel == 'channel-tsop' {
   .btn {
     @include rem(font-size, 18px);
     @include rem(padding-top, 7px);

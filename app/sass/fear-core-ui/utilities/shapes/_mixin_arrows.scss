@@ -16,13 +16,13 @@
   $margin: '';
 
   @if $direction == 'up' {
-    $direction: 'bottom'
+    $direction: 'bottom';
   } @else if $direction == 'down' {
-    $direction: 'top'
+    $direction: 'top';
   } @else if $direction == 'left' {
-    $direction: 'right'
+    $direction: 'right';
   } @else if $direction == 'right' {
-    $direction: 'left'
+    $direction: 'left';
   }
 
   @if $position == 'top' {
@@ -37,7 +37,7 @@
     $horizontalVal: 50%;
     $margin: 'left';
   } @else if $position == 'left' {
-    $horizontal:'right';
+    $horizontal: 'right';
     $opposite: 'right';
     $verticalVal: 50%;
     $horizontalVal: 100%;
@@ -48,8 +48,10 @@
     $horizontalVal: 100%;
     $margin: 'top';
   }
+
   position: relative;
-  &:after {
+
+  &::after {
     #{$vertical}: $verticalVal;
     #{$horizontal}: $horizontalVal;
     border: solid transparent;

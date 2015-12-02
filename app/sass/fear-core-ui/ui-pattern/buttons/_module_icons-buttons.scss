@@ -5,6 +5,12 @@
 .btn__icon {
   @extend %mns-icons;
   position: relative;
+
+  &.btn--xs {
+    &::before {
+      @include rem(font-size, 10px);
+    }
+  }
 }
 
 //*refactor* create button icon mixin
@@ -15,7 +21,7 @@
     @include rem(padding-left, 48px);
   }
 
-  &:before {
+  &::before {
     @extend %icon-gift;
     @include rem(font-size, 18px);
     @include rem(margin-left, -28px);
@@ -32,7 +38,7 @@
     @include rem(padding-left, 48px);
   }
 
-  &:before {
+  &::before {
     @extend %icon-edit;
     @include rem(font-size, 18px);
     @include rem(margin-left, -28px);
@@ -48,7 +54,7 @@
     @include rem(padding-left, 45px);
   }
 
-  &:before {
+  &::before {
     @extend %icon-close;
     @include rem(font-size, 15px);
     @include rem(margin-left, -25px);
@@ -67,7 +73,7 @@
 }
 
 .btn--no-border {
-  &:before {
+  &::before {
     @include rem(top, 14px);
     @include rem(font-size, 13px);
   }
@@ -77,7 +83,7 @@
   @include rem(padding-left, 45px);
   position: relative;
 
-  &:before {
+  &::before {
     @extend %icon-information;
     @include rem(font-size, 15px);
     @include rem(left, 15px);
@@ -90,7 +96,7 @@
   @include rem(padding-left, 45px);
   position: relative;
 
-  &:before {
+  &::before {
     @extend %icon-cancel-order;
     @include rem(font-size, 15px);
     @include rem(left, 15px);
@@ -103,7 +109,7 @@
   @include rem(padding-left, 26px);
   position: relative;
 
-  &:before {
+  &::before {
     @extend %icon-search;
     @include rem(font-size, 15px);
     @include rem(left, 15px);
@@ -119,7 +125,7 @@
     @include rem(padding-left, 45px);
   }
 
-  &:before {
+  &::before {
     @extend %icon-calendar;
     @include rem(font-size, 16px);
     @include rem(margin-left, -25px);
@@ -128,14 +134,8 @@
   }
 }
 
-.btn__icon.btn--xs {
-  &:before {
-    @include rem(font-size, 10px);
-  }
-}
-
 .btn__icon--lock {
-  &:before {
+  &::before {
     @extend %icon-sign-in;
     @include rem(font-size, 20px);
     @include rem(left, -3px);

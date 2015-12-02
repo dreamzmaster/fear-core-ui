@@ -12,7 +12,7 @@
 
 @mixin create-icon($name, $icon) {
   .icon--#{$name} {
-    &:before {
+    &::before {
       @extend %#{$icon};
     }
   }
