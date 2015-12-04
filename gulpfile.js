@@ -1,7 +1,9 @@
 'use strict';
 
-var lint = require('./tasks/lint.js'),
-    sass = require('./tasks/sass.js');
+var lint = require('./tasks/lint'),
+    sass = require('./tasks/sass'),
+    sprites = require('./tasks/sprites');
 
 lint();
 sass();
+sprites();
