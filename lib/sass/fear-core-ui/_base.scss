@@ -1,3 +1,4 @@
+@import 'bourbon';
 @import 'colors';
 
 @import 'layout/grid/bootstrap/variables';
@@ -16,7 +17,7 @@
 @import 'typography/variables';
 @import 'typography/extends';
 
-@import 'utilities/jacket';
+//@import 'utilities/jacket'; // TODO: remove as not being used
 @import 'utilities/measurements';
 @import 'utilities/opacity';
 @import 'utilities/shapes';

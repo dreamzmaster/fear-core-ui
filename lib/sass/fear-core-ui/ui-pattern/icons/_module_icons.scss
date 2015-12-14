@@ -154,5 +154,5 @@ To add icons to the mns-icons font, follow the steps below:
 .icon,
 [class^='icon-']::before,
 [class*=' icon-']::before {
-  @extend %mns-icons;
+  @extend %mns-icon-base;
 }
