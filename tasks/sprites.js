@@ -12,7 +12,7 @@ module.exports = function() {
             src: 'app/imagesToSprite/**/*.{png,jpg}',
             style: 'lib/sass/fear-core-ui/_sprites.scss',
             processor: 'sass',
-            cssPath: '../../../assets/images/sprites/',
+            cssPath: '/assets/images/sprites/',
             split: true,
             margin: 0,
             dimension: [
