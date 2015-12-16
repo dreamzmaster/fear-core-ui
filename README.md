@@ -11,12 +11,12 @@ The library exposes the following paths:
 - assetImagePaths
 - assetFontPaths
 
+
 1. Run `npm install https://github.com/DigitalInnovation/fear-core-ui --save-dev`
 2. Add the following to the gulp sass compile file.
 ```js
 var fearCoreUI = require('fear-core-ui');
-...
-...
+
 .pipe(sass({
     includePaths: fearCoreUI.sassPaths
 }))
