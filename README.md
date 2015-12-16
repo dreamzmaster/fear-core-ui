@@ -56,7 +56,7 @@ We want to make sure that unnecessary CSS is not imported to consuming projects.
 The following can be exposed through aggregate files:
 - mixins
 - variables
-- placeholders
+- functions
 
 **Example:** 
 `@import utlities.scss;`
@@ -65,7 +65,7 @@ The following can be exposed through aggregate files:
     // utlities.scss
     @import 'utilities/functions';
     @import 'utilities/mixins';
-    @import 'utilities/extends';
+    @import 'utilities/variables';
 ```
   
 This can be done because the sass code in these files do not add CSS unless mixins / extends are explicitly called from the consuming code.
