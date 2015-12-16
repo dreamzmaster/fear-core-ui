@@ -4,9 +4,16 @@ Core Sass, fonts and images for Marks and Spencer
 
 
 ### Consuming the Library
+
+The library exposes the following paths:
+- sassPaths
+- assetPaths
+- assetImagePaths
+- assetFontPaths
+
 1. Run `npm install https://github.com/DigitalInnovation/fear-core-ui --save-dev`
 2. Add the following to the gulp sass compile file.
-```
+```js
 var fearCoreUI = require('fear-core-ui');
 ...
 ...
@@ -14,6 +21,23 @@ var fearCoreUI = require('fear-core-ui');
     includePaths: fearCoreUI.sassPaths
 }))
 ```
+3. The following variables need to be set
+```css
+$fear-core-ui-font-dir: '/assets/fonts';
+
+$fear-core-ui-sprite-image-dir: '/assets/images/sprites';
+```
+4. Copy fear-core-ui assets to your working directory
+```js
+var fearCoreUI = require('fear-core-ui');
+
+gulp.task('copy-fear-core-ui-assets', function() {
+    return gulp.src([fearCoreUI.assetPaths + '/**/*.*'])
+        .pipe(gulp.dest('/assets'));
+});
+```
+
+**Note that the variables set in step 3 should correspond to the location of the assets copied in step 4.**
 
 You can now reference any sass file.
 
