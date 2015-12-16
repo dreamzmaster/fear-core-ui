@@ -11,8 +11,8 @@ module.exports = function() {
         return sprity.src({
             src: 'app/imagesToSprite/**/*.{png,jpg}',
             style: 'lib/sass/fear-core-ui/_sprites.scss',
-            processor: 'sass',
-            cssPath: '/assets/images/sprites/',
+            processor: 'fear',
+            cssPath: '/',
             split: true,
             margin: 0,
             dimension: [

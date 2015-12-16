@@ -36,6 +36,6 @@
     "gulp-sass": "2.1.0",
     "gulp-scss-lint": "0.3.8",
     "sprity": "1.0.8",
-    "sprity-sass": "1.0.4"
+    "sprity-fear": "kevinlambert/sprity-fear"
   }
 }
