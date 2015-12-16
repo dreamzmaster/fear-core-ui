@@ -4,25 +4,23 @@
 
 /* -------- Icons -------- */
 
-$fontDir: '/assets/fonts/';
-
-@include font-face('mns-icons', $fontDir + 'mns-icons', $file-formats: eot woff ttf svg);
+@include font-face('mns-icons', $fear-core-ui-font-dir + '/mns-icons', $file-formats: eot woff ttf svg);
 
 /* -------- Typographic -------- */
 
 // Helvetica font declarations
-@include font-face('helvetica-ultra', $fontDir + 'helvetica-ultra-light', $file-formats: eot woff ttf svg);
-@include font-face('helvetica-light', $fontDir + 'helvetica-light', $file-formats: eot woff ttf svg);
-@include font-face('helvetica-roman', $fontDir + 'helvetica-roman', $file-formats: eot woff ttf svg);
-@include font-face('helvetica-medium', $fontDir + 'helvetica-medium', $file-formats: eot woff ttf svg);
-@include font-face('helvetica-bold', $fontDir + 'helvetica-bold', $file-formats: eot woff ttf svg);
-@include font-face('london-semibold', $fontDir + 'MSLondonW03Semibold', $file-formats: eot woff ttf svg);
-@include font-face('london-bold', $fontDir + 'MandSLondonW03Bold', $file-formats: eot woff ttf svg);
-@include font-face('leeds-light', $fontDir + 'MandSLeedsW03Light', $file-formats: eot woff ttf svg);
+@include font-face('helvetica-ultra', $fear-core-ui-font-dir + '/helvetica-ultra-light', $file-formats: eot woff ttf svg);
+@include font-face('helvetica-light', $fear-core-ui-font-dir + '/helvetica-light', $file-formats: eot woff ttf svg);
+@include font-face('helvetica-roman', $fear-core-ui-font-dir + '/helvetica-roman', $file-formats: eot woff ttf svg);
+@include font-face('helvetica-medium', $fear-core-ui-font-dir + '/helvetica-medium', $file-formats: eot woff ttf svg);
+@include font-face('helvetica-bold', $fear-core-ui-font-dir + '/helvetica-bold', $file-formats: eot woff ttf svg);
+@include font-face('london-semibold', $fear-core-ui-font-dir + '/MSLondonW03Semibold', $file-formats: eot woff ttf svg);
+@include font-face('london-bold', $fear-core-ui-font-dir + '/MandSLondonW03Bold', $file-formats: eot woff ttf svg);
+@include font-face('leeds-light', $fear-core-ui-font-dir + '/MandSLeedsW03Light', $file-formats: eot woff ttf svg);
 
 // Didot font declarations
-@include font-face('didot-roman', $fontDir + 'didot-roman', $file-formats: eot woff ttf svg);
-@include font-face('didot-italic', $fontDir + 'didot-italic', $file-formats: eot woff ttf svg);
-@include font-face('didot-bold', $fontDir + 'didot-bold', $file-formats: eot woff ttf svg);
-@include font-face('didot-bold-italic', $fontDir + 'didot-bold-italic', $file-formats: eot woff ttf svg);
+@include font-face('didot-roman', $fear-core-ui-font-dir + '/didot-roman', $file-formats: eot woff ttf svg);
+@include font-face('didot-italic', $fear-core-ui-font-dir + '/didot-italic', $file-formats: eot woff ttf svg);
+@include font-face('didot-bold', $fear-core-ui-font-dir + '/didot-bold', $file-formats: eot woff ttf svg);
+@include font-face('didot-bold-italic', $fear-core-ui-font-dir + '/didot-bold-italic', $file-formats: eot woff ttf svg);
 
