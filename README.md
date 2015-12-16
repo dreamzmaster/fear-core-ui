@@ -13,6 +13,7 @@ The library exposes the following paths:
 
 
 .1 Run `npm install https://github.com/DigitalInnovation/fear-core-ui --save-dev`
+
 .2 Add the following to the gulp sass compile file.
 ```js
 var fearCoreUI = require('fear-core-ui');
@@ -127,21 +128,6 @@ item.scss
 
 ### Directory categories
 ```
-sass
-|- globals
-    |- typography.scss
-    |- typography
-        |- _variables.scss
-        |- _module_fonts.scss
-    |- colors.scss
-|- utilites
-    |- _mixins_measurements.scss
-|- modules
-    |- _buttons.scss
-    |- buttons
-        |- _mixins.scss
-        |- _module_icons.scss
-        |- _module_buttons.scss
 |- layouts
     |- _grid.scss
     |- grid
@@ -149,6 +135,19 @@ sass
         |- _mixins.scss        
         |- _module_grid.scss        
     |- _zindex.scss
-    |- _header.scss
-    |- _footer.scss
+|- normalize
+    |- _module_mns-normalize.scss
+    |- _module_normalize.scss
+|- typography
+|- ui-pattern
+    |- _buttons.scss
+    |- buttons
+        |- _mixins.scss
+        |- _module_icons.scss
+        |- _module_buttons.scss
+|- utilites
+    |- _mixins_measurements.scss
+_colors.scss
+_sprites.scss
+_normalize.scss
 ```
