@@ -4,7 +4,8 @@
   "description": "Marks and Spencer core UI sass, fonts, images and assets",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "./node_modules/sassdoc/bin/sassdoc lib/sass -d docs"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,9 @@
     "gulp-if": "2.0.0",
     "gulp-sass": "2.1.0",
     "gulp-scss-lint": "0.3.8",
+    "sassdoc": "2.1.15",
+    "sassdoc-extras": "2.3.0",
+    "sassdoc-theme-mns": "git+https://github.com/DigitalInnovation/sassdoc-theme-mns",
     "sprity": "1.0.8",
     "sprity-fear": "kevinlambert/sprity-fear"
   }
