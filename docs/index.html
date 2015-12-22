@@ -1,0 +1,249 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Fear-core-ui - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="http://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Fear-core-ui - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="<p>Marks and Spencer core UI sass, fonts, images and assets</p>
+"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title"><a href="https://github.com/DigitalInnovation/fear-core-ui">Fear-core-ui - v1.0.0</a></h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="animations"><a href="#animations">animations</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="animations-mixin"><a href="#animations-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="keyframes" data-type="mixin"><a href="#animations-mixin-keyframes">keyframes</a></li><li class="sidebar__item sassdoc__item" data-name="animation" data-type="mixin"><a href="#animations-mixin-animation">animation</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="buttons"><a href="#buttons">buttons</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="buttons-mixin"><a href="#buttons-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="create-disabled-btn" data-type="mixin"><a href="#buttons-mixin-create-disabled-btn">create-disabled-btn</a></li><li class="sidebar__item sassdoc__item" data-name="create-btn" data-type="mixin"><a href="#buttons-mixin-create-btn">create-btn</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="icons"><a href="#icons">icons</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="icons-mixin"><a href="#icons-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="create-icon" data-type="mixin"><a href="#icons-mixin-create-icon">create-icon</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="jacket"><a href="#jacket">jacket</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="jacket-mixin"><a href="#jacket-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="jacket" data-type="mixin"><a href="#jacket-mixin-jacket">jacket</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="measurements"><a href="#measurements">measurements</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="measurements-function"><a href="#measurements-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="calculateEm" data-type="function"><a href="#measurements-function-calculateEm">calculateEm</a></li><li class="sidebar__item sassdoc__item" data-name="parseInt" data-type="function"><a href="#measurements-function-parseInt">parseInt</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="measurements-mixin"><a href="#measurements-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="rem" data-type="mixin"><a href="#measurements-mixin-rem">rem</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="media queries"><a href="#media queries">media queries</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="media queries-mixin"><a href="#media queries-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="media-query-max-xsmall" data-type="mixin"><a href="#media queries-mixin-media-query-max-xsmall">media-query-max-xsmall</a></li><li class="sidebar__item sassdoc__item" data-name="media-query-below-xsmall" data-type="mixin"><a href="#media queries-mixin-media-query-below-xsmall">media-query-below-xsmall</a></li><li class="sidebar__item sassdoc__item" data-name="media-query-xsmall" data-type="mixin"><a href="#media queries-mixin-media-query-xsmall">media-query-xsmall</a></li><li class="sidebar__item sassdoc__item" data-name="media-query-xsmall-small" data-type="mixin"><a href="#media queries-mixin-media-query-xsmall-small">media-query-xsmall-small</a></li><li class="sidebar__item sassdoc__item" data-name="media-query-small" data-type="mixin"><a href="#media queries-mixin-media-query-small">media-query-small</a></li><li class="sidebar__item sassdoc__item" data-name="media-query-medium" data-type="mixin"><a href="#media queries-mixin-media-query-medium">media-query-medium</a></li><li class="sidebar__item sassdoc__item" data-name="media-query-large" data-type="mixin"><a href="#media queries-mixin-media-query-large">media-query-large</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="media queries-variable"><a href="#media queries-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="screen-xs" data-type="variable"><a href="#media queries-variable-screen-xs">screen-xs</a></li><li class="sidebar__item sassdoc__item" data-name="screen-sm" data-type="variable"><a href="#media queries-variable-screen-sm">screen-sm</a></li><li class="sidebar__item sassdoc__item" data-name="screen-md" data-type="variable"><a href="#media queries-variable-screen-md">screen-md</a></li><li class="sidebar__item sassdoc__item" data-name="screen-lg" data-type="variable"><a href="#media queries-variable-screen-lg">screen-lg</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="sprites"><a href="#sprites">sprites</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="sprites-mixin"><a href="#sprites-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="center-horizontally" data-type="mixin"><a href="#sprites-mixin-center-horizontally">center-horizontally</a></li><li class="sidebar__item sassdoc__item" data-name="center-vertically" data-type="mixin"><a href="#sprites-mixin-center-vertically">center-vertically</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="create-arrow" data-type="mixin"><a href="#undefined-mixin-create-arrow">create-arrow</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="utility helpers"><a href="#utility helpers">utility helpers</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="utility helpers-mixin"><a href="#utility helpers-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="vertical-align" data-type="mixin"><a href="#utility helpers-mixin-vertical-align">vertical-align</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="animations"><div class="container">animations</div></h1><section class="main__sub-section" id="animations-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="animations-mixin-keyframes"><h3 class="item__heading"><a class="item__name" href="#mixin-keyframes">keyframes</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin keyframes() { 
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+ }" data-collapsed="@mixin keyframes() { ... }"><code>@mixin keyframes() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Streamline animations</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).</p></section><section class="main__item container item" id="animations-mixin-animation"><h3 class="item__heading"><a class="item__name" href="#mixin-animation">animation</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin animation() { 
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+ }" data-collapsed="@mixin animation() { ... }"><code>@mixin animation() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Autoprefix animations</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p></section></section></section><section class="main__section"><h1 class="main__heading" id="buttons"><div class="container">buttons</div></h1><section class="main__sub-section" id="buttons-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="buttons-mixin-create-disabled-btn"><h3 class="item__heading"><a class="item__name" href="#mixin-create-disabled-btn">create-disabled-btn</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin create-disabled-btn() { 
+  color: $text;
+  background: $bg-color;
+  border-color: shade($bg-color, 10%);
+ }" data-collapsed="@mixin create-disabled-btn() { ... }"><code>@mixin create-disabled-btn() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Create disabled buttons</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-create-btn"><code>create-btn</code></a></li></ul></section><section class="main__item container item" id="buttons-mixin-create-btn"><h3 class="item__heading"><a class="item__name" href="#mixin-create-btn">create-btn</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin create-btn() { 
+  color: $color-text;
+  @include rem(height, $height);
+  @include rem(font-size, $font-size);
+  background: $color-bg;
+  border-color: shade($color-bg, 10%);
+
+  .no-touch &amp;:hover,
+  &amp;:focus {
+    background: shade($color-bg, 5%);
+    border-color: shade($color-bg, 15%);
+  }
+
+  &amp;:active {
+    background: shade($color-bg, 10%);
+    border-color: shade($color-bg, 20%);
+  }
+
+  &amp;.is-disabled {
+    @include create-disabled-btn($color-text-disabled, $color-bg-disabled);
+  }
+ }" data-collapsed="@mixin create-btn() { ... }"><code>@mixin create-btn() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Create buttons</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#mixin-rem"><code>rem</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#mixin-create-disabled-btn"><code>create-disabled-btn</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>kymbee</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="icons"><div class="container">icons</div></h1><section class="main__sub-section" id="icons-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="icons-mixin-create-icon"><h3 class="item__heading"><a class="item__name" href="#mixin-create-icon">create-icon</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin create-icon($name, $icon) { 
+  .icon--#{$name} {
+    &amp;::before {
+      @extend %#{$icon};
+    }
+  }
+ }" data-collapsed="@mixin create-icon($name, $icon) { ... }"><code>@mixin create-icon($name, $icon) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Creates pseudo class containing font icon</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$name</code></th><td data-label="desc"><p>Name of class, ie &#39;gift&#39; will become &#39;.icon--gift&#39;</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$icon</code></th><td data-label="desc"><p>Name of icon you would like to extend, ie &#39;.icon-gift&#39;</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><p>.icon--gift { &amp;:before { @extend %icon-gift; } }</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include rem(&#39;gift&#39;, &#39;icon-gift&#39;);</code></pre></div></section></section></section><section class="main__section"><h1 class="main__heading" id="jacket"><div class="container">jacket</div></h1><section class="main__sub-section" id="jacket-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="jacket-mixin-jacket"><h3 class="item__heading"><a class="item__name" href="#mixin-jacket">jacket</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin jacket() { 
+
+  $naked: false;
+  $selectors: ();
+  $filtered: ();
+  $selector-string: &#39;&#39;;
+
+  // Set the global context variable.
+  $jckt-context: $contexts !global;
+
+  // If jacket is a single context and selector list, encapsulate.
+  @if list-separator($jacket) == &#39;space&#39; {
+    $jacket: $jacket, null !global;
+  }
+
+  // Test if a jacket context and jacket value match.
+  @each $item in $jacket {
+    @each $context in $contexts {
+      @if index($context, nth($item, 1)) {
+
+        // Gather wrapping selectors.
+        @if length($item) == 1 {
+          $naked: true;
+        }
+        @if length($item) == 2 {
+          $selectors: append($selectors, nth($item, 2) + &#39; &amp;&#39;);
+        }
+      }
+    }
+  }
+
+  // Filter out duplicate selectors.
+  // If reject() is added to Sass we can remove the $filtered holder variable.
+  @each $selector in $selectors {
+    @if index($filtered, $selector) == false {
+      $filtered: append($filtered, $selector);
+    }
+  }
+
+  // Build the selector string.
+  @each $selector in $filtered {
+    @if $selector-string != &#39;&#39; {
+      $selector-string: $selector-string + &#39;, &#39;;
+    }
+    $selector-string: $selector-string + $selector;
+  }
+
+  // If the weather is right, output that jacketed code!
+  @if $naked {
+    @content;
+  }
+  @if $selector-string != &#39;&#39; {
+    #{$selector-string} {
+      @content;
+    }
+  }
+ }" data-collapsed="@mixin jacket() { ... }"><code>@mixin jacket() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Conditional Styles with Sass. Dress you CSS appropriately. Jacket is a Compass component that prints and hides styles based on context variables you set in your stylesheet. Write and maintain a master stylesheet, then output custom tailored stylesheets for modern and legacy browsers, site and app builds, or any other context you can think of.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).<h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="https://github.com/at-import/jacket">https://github.com/at-import/jacket</a></li></ul></p></section></section></section><section class="main__section"><h1 class="main__heading" id="measurements"><div class="container">measurements</div></h1><section class="main__sub-section" id="measurements-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="measurements-function-calculateEm"><h3 class="item__heading"><a class="item__name" href="#function-calculateEm">calculateEm</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function calculateEm() { 
+  $emSize: $size / $base-font-size * 1em;
+  @return $emSize;
+ }" data-collapsed="@function calculateEm() { ... }"><code>@function calculateEm() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Return EM from PX input</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-media-query-max-xsmall"><code>media-query-max-xsmall</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-media-query-below-xsmall"><code>media-query-below-xsmall</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-media-query-xsmall"><code>media-query-xsmall</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-media-query-xsmall-small"><code>media-query-xsmall-small</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-media-query-small"><code>media-query-small</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-media-query-medium"><code>media-query-medium</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-media-query-large"><code>media-query-large</code></a></li></ul></section><section class="main__item container item" id="measurements-function-parseInt"><h3 class="item__heading"><a class="item__name" href="#function-parseInt">parseInt</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function parseInt() { 
+  @return $n / ($n * 0 + 1);
+ }" data-collapsed="@function parseInt() { ... }"><code>@function parseInt() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Returns boolean</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-rem"><code>rem</code></a></li></ul></section></section><section class="main__sub-section" id="measurements-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="measurements-mixin-rem"><h3 class="item__heading"><a class="item__name" href="#mixin-rem">rem</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin rem($property, $values) { 
+  $px: ();
+  $rem: ();
+
+  @each $value in $values {
+
+    $int: ();
+
+    @if $value != auto {
+      $int: parseInt($value);
+    } @else {
+      $int: $value;
+    }
+
+    @if $int == 0 or $value == auto {
+      $px: append($px, $value);
+      $rem: append($rem, $value);
+    } @else {
+      $unit: unit($value);
+      $val: parseInt($value);
+
+      @if $unit == &#39;px&#39; {
+        $px: append($px, $value);
+        $rem: append($rem, ($val / 10 + rem));
+      }
+      @if $unit == &#39;rem&#39; {
+        $px: append($px, ($val * 10 + px));
+        $rem: append($rem, $value);
+      }
+    }
+  }
+
+  @if $px == $rem {
+    #{$property}: $px;
+  } @else {
+    #{$property}: $rem;
+  }
+ }" data-collapsed="@mixin rem($property, $values) { ... }"><code>@mixin rem($property, $values) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Sets rem values</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$property</code></th><td data-label="desc"><p>Font-size, margin, etc</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$values</code></th><td data-label="desc"><p>Measurement in px (15px 5px)</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><p>ie browsers - padding: 15px 5px; other browsers - padding: 1.5rem 0.5rem;</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include rem(padding, 15px 5px);</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#function-parseInt"><code>parseInt</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-create-btn"><code>create-btn</code></a></li></ul><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/">http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Hugo Giraudel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="media queries"><div class="container">media queries</div></h1><section class="main__sub-section" id="media queries-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="media queries-mixin-media-query-max-xsmall"><h3 class="item__heading"><a class="item__name" href="#mixin-media-query-max-xsmall">media-query-max-xsmall</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin media-query-max-xsmall() { 
+  @media only screen and (max-width: calculateEm($screen-xs-max/1px)) {
+    @content;
+  }
+ }" data-collapsed="@mixin media-query-max-xsmall() { ... }"><code>@mixin media-query-max-xsmall() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Extra small devices ONLY (phones, less than 768px)</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).<h3 class="item__sub-heading">Output</h3><div class="item__description"><p>@media (max-width: 767px)</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include media-query-max-xsmall</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#function-calculateEm"><code>calculateEm</code></a></li></ul></p></section><section class="main__item container item" id="media queries-mixin-media-query-below-xsmall"><h3 class="item__heading"><a class="item__name" href="#mixin-media-query-below-xsmall">media-query-below-xsmall</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin media-query-below-xsmall() { 
+  @media only screen and (max-width: calculateEm(($screen-xs-min - 1)/1px)) {
+    @content;
+  }
+ }" data-collapsed="@mixin media-query-below-xsmall() { ... }"><code>@mixin media-query-below-xsmall() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Extra small devices ONLY (phones, less than 480px)</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).<h3 class="item__sub-heading">Output</h3><div class="item__description"><p>@media (max-width: 479px)</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include media-query-below-xsmall</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#function-calculateEm"><code>calculateEm</code></a></li></ul></p></section><section class="main__item container item" id="media queries-mixin-media-query-xsmall"><h3 class="item__heading"><a class="item__name" href="#mixin-media-query-xsmall">media-query-xsmall</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin media-query-xsmall() { 
+  @media only screen and (min-width: calculateEm($screen-xs/1px)) {
+    @content;
+  }
+ }" data-collapsed="@mixin media-query-xsmall() { ... }"><code>@mixin media-query-xsmall() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Extra small devices (480px and up)</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).<h3 class="item__sub-heading">Output</h3><div class="item__description"><p>@media only screen and (min-width: 30em)</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include media-query-xsmall</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#function-calculateEm"><code>calculateEm</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#variable-screen-xs"><code>screen-xs</code></a></li></ul></p></section><section class="main__item container item" id="media queries-mixin-media-query-xsmall-small"><h3 class="item__heading"><a class="item__name" href="#mixin-media-query-xsmall-small">media-query-xsmall-small</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin media-query-xsmall-small() { 
+  @media (min-width: calculateEm($screen-xs/1px)) and (max-width: calculateEm($screen-xs-max/1px)) {
+    @content;
+  }
+ }" data-collapsed="@mixin media-query-xsmall-small() { ... }"><code>@mixin media-query-xsmall-small() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Extra small devices to Small devices(480px to 768px)</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).<h3 class="item__sub-heading">Output</h3><div class="item__description"><p>@media (min-width: 30em) and (max-width: 48em)</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include media-query-xsmall-small</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#function-calculateEm"><code>calculateEm</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#variable-screen-xs"><code>screen-xs</code></a></li></ul></p></section><section class="main__item container item" id="media queries-mixin-media-query-small"><h3 class="item__heading"><a class="item__name" href="#mixin-media-query-small">media-query-small</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin media-query-small() { 
+  @media only screen and (min-width: calculateEm($screen-sm/1px)) {
+    @content;
+  }
+ }" data-collapsed="@mixin media-query-small() { ... }"><code>@mixin media-query-small() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Small devices (tablets, 768px and up)</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).<h3 class="item__sub-heading">Output</h3><div class="item__description"><p>@media only screen and (min-width: 48em)</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include media-query-small</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#function-calculateEm"><code>calculateEm</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#variable-screen-sm"><code>screen-sm</code></a></li></ul></p></section><section class="main__item container item" id="media queries-mixin-media-query-medium"><h3 class="item__heading"><a class="item__name" href="#mixin-media-query-medium">media-query-medium</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin media-query-medium() { 
+  @media only screen and (min-width: calculateEm($screen-md/1px)) {
+    @content;
+  }
+ }" data-collapsed="@mixin media-query-medium() { ... }"><code>@mixin media-query-medium() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Medium devices (desktops, 992px and up)</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).<h3 class="item__sub-heading">Output</h3><div class="item__description"><p>@media only screen and (min-width: 62em)</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include media-query-medium</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#function-calculateEm"><code>calculateEm</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#variable-screen-md"><code>screen-md</code></a></li></ul></p></section><section class="main__item container item" id="media queries-mixin-media-query-large"><h3 class="item__heading"><a class="item__name" href="#mixin-media-query-large">media-query-large</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin media-query-large() { 
+  @media only screen and (min-width: calculateEm($screen-lg/1px)) {
+    @content;
+  }
+ }" data-collapsed="@mixin media-query-large() { ... }"><code>@mixin media-query-large() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Large devices (large desktops, 1200px and up)</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).<h3 class="item__sub-heading">Output</h3><div class="item__description"><p>@media only screen and (min-width: 75em)</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include media-query-large</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#function-calculateEm"><code>calculateEm</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#variable-screen-lg"><code>screen-lg</code></a></li></ul></p></section></section><section class="main__sub-section" id="media queries-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="media queries-variable-screen-xs"><h3 class="item__heading"><a class="item__name" href="#variable-screen-xs">screen-xs</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$screen-xs: 480px !default;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Up to mobile portrait</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-media-query-xsmall"><code>media-query-xsmall</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-media-query-xsmall-small"><code>media-query-xsmall-small</code></a></li></ul></section><section class="main__item container item" id="media queries-variable-screen-sm"><h3 class="item__heading"><a class="item__name" href="#variable-screen-sm">screen-sm</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$screen-sm: 769px !default;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Up to mobile landscape / tablet portrait</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-media-query-small"><code>media-query-small</code></a></li></ul></section><section class="main__item container item" id="media queries-variable-screen-md"><h3 class="item__heading"><a class="item__name" href="#variable-screen-md">screen-md</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$screen-md: 992px !default;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Up to tablet landscape / desktop</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-media-query-medium"><code>media-query-medium</code></a></li></ul></section><section class="main__item container item" id="media queries-variable-screen-lg"><h3 class="item__heading"><a class="item__name" href="#variable-screen-lg">screen-lg</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$screen-lg: 1200px !default;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Large desktop</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-media-query-large"><code>media-query-large</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="sprites"><div class="container">sprites</div></h1><section class="main__sub-section" id="sprites-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="sprites-mixin-center-horizontally"><h3 class="item__heading"><a class="item__name" href="#mixin-center-horizontally">center-horizontally</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin center-horizontally() { 
+  left: 50%;
+  margin-left: calculateRem(image-width(sprite-file($icons-x1, $sprite-name)) / 2 / 1px) * -1;
+ }" data-collapsed="@mixin center-horizontally() { ... }"><code>@mixin center-horizontally() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Center an icon (sprite) horizontally</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p></section><section class="main__item container item" id="sprites-mixin-center-vertically"><h3 class="item__heading"><a class="item__name" href="#mixin-center-vertically">center-vertically</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin center-vertically() { 
+  top: 50%;
+  margin-top: calculateRem(image-height(sprite-file($icons-x1, $sprite-name)) / 2 / 1px) * -1;
+ }" data-collapsed="@mixin center-vertically() { ... }"><code>@mixin center-vertically() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Center an icon (sprite) vertically</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p></section></section></section><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="undefined-mixin-create-arrow"><h3 class="item__heading"><a class="item__name" href="#mixin-create-arrow">create-arrow</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin create-arrow($size, $direction, $position, $color) { 
+
+  $opposite: &#39;&#39;;
+  $vertical: &#39;top&#39;;
+  $horizontal: &#39;left&#39;;
+  $verticalVal: &#39;&#39;;
+  $horizontalVal: &#39;&#39;;
+  $margin: &#39;&#39;;
+
+  @if $direction == &#39;up&#39; {
+    $direction: &#39;bottom&#39;;
+  } @else if $direction == &#39;down&#39; {
+    $direction: &#39;top&#39;;
+  } @else if $direction == &#39;left&#39; {
+    $direction: &#39;right&#39;;
+  } @else if $direction == &#39;right&#39; {
+    $direction: &#39;left&#39;;
+  }
+
+  @if $position == &#39;top&#39; {
+    $vertical: &#39;bottom&#39;;
+    $opposite: &#39;bottom&#39;;
+    $verticalVal: 100%;
+    $horizontalVal: 50%;
+    $margin: &#39;left&#39;;
+  } @else if $position == &#39;bottom&#39; {
+    $opposite: &#39;top&#39;;
+    $verticalVal: 100%;
+    $horizontalVal: 50%;
+    $margin: &#39;left&#39;;
+  } @else if $position == &#39;left&#39; {
+    $horizontal: &#39;right&#39;;
+    $opposite: &#39;right&#39;;
+    $verticalVal: 50%;
+    $horizontalVal: 100%;
+    $margin: &#39;top&#39;;
+  } @else if $position == &#39;right&#39; {
+    $opposite: &#39;left&#39;;
+    $verticalVal: 50%;
+    $horizontalVal: 100%;
+    $margin: &#39;top&#39;;
+  }
+
+  position: relative;
+
+  &amp;::after {
+    #{$vertical}: $verticalVal;
+    #{$horizontal}: $horizontalVal;
+    border: solid transparent;
+    content: &#39; &#39;;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-#{$direction}-color: $color;
+    border-width: $size;
+    margin-#{$margin}: -#{$size};
+  }
+ }" data-collapsed="@mixin create-arrow($size, $direction, $position, $color) { ... }"><code>@mixin create-arrow($size, $direction, $position, $color) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Create arrows mixin, based on the CSS version (link provided).</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$size</code></th><td data-label="desc"><p>ie, 5px</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$direction</code></th><td data-label="desc"><p>ie, up | down | left | right</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$position</code></th><td data-label="desc"><p>ie, top | bottom | left | right</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$color</code></th><td data-label="desc"><p>ie, $color__brand--green</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include create-arrow(5px, up, right, $color__brand--green);</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="">www.cssarrowplease.com</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>kymbee</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="utility helpers"><div class="container">utility helpers</div></h1><section class="main__sub-section" id="utility helpers-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="utility helpers-mixin-vertical-align"><h3 class="item__heading"><a class="item__name" href="#mixin-vertical-align">vertical-align</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin vertical-align() { 
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+ }" data-collapsed="@mixin vertical-align() { ... }"><code>@mixin vertical-align() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Vertically align element in the middle</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --><a class="project-info__name" href="https://github.com/DigitalInnovation/fear-core-ui">Fear-core-ui</a><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>
