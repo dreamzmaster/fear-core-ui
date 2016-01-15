@@ -10,12 +10,10 @@
 @import 'layout/grid/mixins_breakpoints';
 
 @import 'layout/positioning/mixins';
-@import 'layout/positioning/extends';
 
 @import 'layout/zindex';
 
 @import 'typography/variables';
-@import 'typography/extends';
 
 //@import 'utilities/jacket'; // TODO: remove as not being used
 @import 'utilities/measurements';
@@ -25,8 +23,6 @@
 
 @import 'ui-pattern/buttons/mixins';
 @import 'ui-pattern/icons/mixins';
-@import 'ui-pattern/icons/extends';
-@import 'ui-pattern/icons/extends_content';
 
 
 
