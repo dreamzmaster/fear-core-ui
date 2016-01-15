@@ -48,6 +48,14 @@ You can now reference any sass file.
 @import 'fear-core-ui/typography';
 ```
 
+### Basic Structure
+
+`fear-core-ui/base` contains all the variables, functions and mixins in the library. 
+You can import this multiple times in your SASS code.
+
+`fear-core-ui/extends` contains all the extends rules. 
+This should be imported once and ONLY once per generated CSS file. If you import it more than once per generated CSS file you will have duplicate CSS rules.
+
 # SASS / CSS coding standards
 
 We want to make sure that unnecessary CSS is not imported to consuming projects.
